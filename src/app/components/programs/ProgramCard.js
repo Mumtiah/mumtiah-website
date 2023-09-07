@@ -1,5 +1,6 @@
 import { Box, Grid, AspectRatio, Text, Button } from "@chakra-ui/react";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
+import Link from "next/link";
 
 export const ProgramCard = ({
   media,
@@ -47,7 +48,7 @@ export const ProgramCard = ({
           colorScheme="teal"
           variant="outline"
         >
-          Apply
+          <Link href={"/enroll"}>Apply</Link>
         </Button>
       </Box>
     </Grid>

@@ -41,16 +41,18 @@ const programData = [
 
 export default function Programs() {
   return (
-    <Container maxW="1440px" justifyContent={"center"}>
-      {programData.map((program, index) => (
-        <ProgramCard
-          key={index}
-          heroText={program.heroText}
-          sublineText={program.sublineText}
-          isVideo={program.isVideo}
-          media={program.media}
-        />
-      ))}
-    </Container>
+    <Box bg={{ base: "#FEFFED", md: "#fff" }} width="full" height="full">
+      <Container maxW="1440px" justifyContent={"center"} px={{ base: "10px" }}>
+        {programData.map((program, index) => (
+          <ProgramCard
+            key={index}
+            heroText={program.heroText}
+            sublineText={program.sublineText}
+            isVideo={program.isVideo}
+            media={program.media}
+          />
+        ))}
+      </Container>
+    </Box>
   );
 }
