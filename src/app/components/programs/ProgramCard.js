@@ -13,7 +13,7 @@ export const ProgramCard = ({
       alignItems="center"
       width="full"
       p={5}
-      height="476px"
+      maxH="476px"
     >
       {/* Media Section */}
       <Box>
@@ -27,7 +27,9 @@ export const ProgramCard = ({
             />
           </AspectRatio>
         ) : (
-          <img width={"100%"} height="100%" src={media} alt="Image Alt" />
+          <AspectRatio ratio={16 / 9}>
+            <img width={"100%"} height="100%" src={media} alt="Image Alt" />
+          </AspectRatio>
         )}
       </Box>
 
