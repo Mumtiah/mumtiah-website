@@ -1,5 +1,8 @@
-import Image from "next/image";
+'use-client'
+import { Container, Text } from "@chakra-ui/react"
 
-export default function Home() {
-  return <div>This is home page</div>;
-}
+export const Home = () => (
+    <Container>
+      <Text>Mumtiah</Text>
+    </Container>
+)
