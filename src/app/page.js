@@ -1,8 +1,10 @@
-'use-client'
-import { Container, Text } from "@chakra-ui/react"
+"use client";
+import { Container, Text } from "@chakra-ui/react";
 
-export const Home = () => (
-    <Container>
-      <Text>Mumtiah</Text>
-    </Container>
-)
+const Home = () => (
+  <Container>
+    <Text>Mumtiah</Text>
+  </Container>
+);
+
+export default Home;
