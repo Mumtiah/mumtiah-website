@@ -5,7 +5,8 @@ import {
   Stack,
   Text,
   Image,
-  Divider
+  Divider,
+  Box
 } from "@chakra-ui/react";
 import { FaTwitter, FaInstagram, FaFacebook } from "react-icons/fa";
 
@@ -16,7 +17,8 @@ export const Footer = () => (
     role="contentinfo"
     bg='#002A11'
     maxW="container.max"
-    p={12}
+    py={{ base: "40px", lg: "120px" }}
+    px={{ base: "16px", lg: "100px" }} 
     
   >
     <Stack
@@ -24,17 +26,22 @@ export const Footer = () => (
         base: "4",
         md: "5",
       }}
+      
     >
         <Image src="/mumtiahLogo.svg" w='40.69px' h='45px'></Image>
-        <Text color='white' fontSize='16px' fontWeight='400px' >Annex:</Text>
-        <Text color='white' fontSize='16px' fontWeight='400px' noOfLines={{base:'2', md:'3'}} mb={4}>10 adesina street,ladi-lak, Bariga Lagos. </Text>
-
-        <Text color='white' fontSize='16px' fontWeight='400px'>Branch:</Text>
-        <Text color='white' fontSize='16px' fontWeight='400px' noOfLines={{base:'2', md:'3'}} mb={4}>10 adesina street,ladi-lak, Bariga Lagos.</Text>
-
-        <Text color='white' fontSize='16px' fontWeight='400px' >Branch:</Text>
-      <Text color='white' fontSize='16px' fontWeight='400px'  noOfLines={[1,2,3]} mb={4}>10 adesina street,ladi-lak, Bariga Lagos. </Text>
-
+        <Box w="210px">
+          <Text color='white' fontSize={{ base:"14px", md:"24px"}} fontWeight='400px' >Annex:</Text>
+          <Text color='white' fontSize={{ base:"14px", md:"24px"}} fontWeight='400px' noOfLines={{base:'2', md:'3'}} mb={4}>10 adesina street, ladi-lak, Bariga Lagos. </Text>
+        </Box>
+        <Box w="210px">
+          <Text color='white' fontSize={{ base:"14px", md:"24px"}} fontWeight='400px' >Annex:</Text>
+          <Text color='white' fontSize={{ base:"14px", md:"24px"}} fontWeight='400px' noOfLines={{base:'2', md:'3'}} mb={4}>Lasuth Central Mosque, Ikeja. </Text>
+        </Box>
+        <Box w="210px">
+          <Text color='white' fontSize={{ base:"14px", md:"24px"}} fontWeight='400px' >Annex:</Text>
+          <Text color='white' fontSize={{ base:"14px", md:"24px"}} fontWeight='400px' noOfLines={{base:'2', md:'3'}} mb={4}>Righeous Kiddies School, 16, Apesin street, Mushin</Text>
+        </Box>
+        
         <Divider orientation='horizontal'/>
         <Text color='white' fontSize='14px' fontWeight='400px' textAlign='center'>Copyright 2023, All Right Reserved</Text>
         <ButtonGroup variant="tertiary" color='white' mx='auto'>
