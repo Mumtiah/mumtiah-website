@@ -17,10 +17,6 @@ export const Footer = () => (
     bg='#002A11'
     maxW="container.max"
     p={12}
-    // py={{
-    //   base: "12",
-    //   md: "16",
-    // }}
     
   >
     <Stack
@@ -31,13 +27,13 @@ export const Footer = () => (
     >
         <Image src="/mumtiahLogo.svg" w='40.69px' h='45px'></Image>
         <Text color='white' fontSize='16px' fontWeight='400px' >Annex:</Text>
-        <Text color='white' fontSize='16px' fontWeight='400px' noOfLines={{base:'2', md:'3'}} mb={4}>2972 Westheimer Rd. Santa Ana, Illinois 85486 </Text>
+        <Text color='white' fontSize='16px' fontWeight='400px' noOfLines={{base:'2', md:'3'}} mb={4}>10 adesina street,ladi-lak, Bariga Lagos. </Text>
 
         <Text color='white' fontSize='16px' fontWeight='400px'>Branch:</Text>
-        <Text color='white' fontSize='16px' fontWeight='400px' noOfLines={{base:'2', md:'3'}} mb={4}>2972 Westheimer Rd. Santa Ana, Illinois 85486 </Text>
+        <Text color='white' fontSize='16px' fontWeight='400px' noOfLines={{base:'2', md:'3'}} mb={4}>10 adesina street,ladi-lak, Bariga Lagos.</Text>
 
         <Text color='white' fontSize='16px' fontWeight='400px' >Branch:</Text>
-      <Text color='white' fontSize='16px' fontWeight='400px'  noOfLines={[1,2,3]} mb={4}>2972 Westheimer Rd. Santa Ana, Illinois 85486 </Text>
+      <Text color='white' fontSize='16px' fontWeight='400px'  noOfLines={[1,2,3]} mb={4}>10 adesina street,ladi-lak, Bariga Lagos. </Text>
 
         <Divider orientation='horizontal'/>
         <Text color='white' fontSize='14px' fontWeight='400px' textAlign='center'>Copyright 2023, All Right Reserved</Text>
@@ -61,9 +57,5 @@ export const Footer = () => (
 
         
       </Stack>
-      {/* <Text fontSize="sm" color="fg.subtle">
-        &copy; {new Date().getFullYear()} Chakra UI Pro, Inc. All rights
-        reserved.
-      </Text> */}
   </Container>
 );
