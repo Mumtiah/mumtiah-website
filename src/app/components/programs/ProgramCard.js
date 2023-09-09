@@ -19,7 +19,6 @@ export const ProgramCard = ({
       {/* Media Section */}
       <Box>
         {isVideo ? (
-          // You would need to replace the iframe `src` with a link to your video, or dynamically pass it in as props
           <AspectRatio ratio={16 / 9}>
             <iframe
               src={media}
