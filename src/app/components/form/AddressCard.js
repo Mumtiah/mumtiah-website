@@ -111,6 +111,9 @@ export const PersonalInfoCard = (props) => (
     >
       <Button
         w={"333px"}
+        h={"57px"}
+        borderRadius={"12px"}
+        fontSize={"14px"}
         color="white"
         bg={"#002A11"}
         _hover={{
@@ -119,7 +122,7 @@ export const PersonalInfoCard = (props) => (
         }}
         type="submit"
       >
-        Save
+        Submit
       </Button>
     </Flex>
   </Box>
