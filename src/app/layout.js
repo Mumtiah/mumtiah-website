@@ -4,6 +4,7 @@ import { Providers } from "./providers";
 import { Inter } from "next/font/google";
 import { Navbar } from "./components/navigation/Navbar";
 import { Footer } from "./components/footer/Footer";
+import { Box } from "@chakra-ui/react";
 
 const inter = Inter({ subsets: ["latin"] });
 

@@ -1,7 +1,15 @@
-import Image from "next/image";
+"use client";
+import { Box } from "@chakra-ui/react";
+import { HeroSection } from "./components/home/HeroSection";
+import { Donation } from "./components/home/Donation";
+import { ApplyNow } from "./components/home/ApplyNow";
 
-export default function Home() {
-  return <div>
-    This is home page
-    </div>;
-}
+const Home = () => (
+  <Box width="full">
+    <HeroSection />
+    <Donation />
+    <ApplyNow />
+  </Box>
+);
+
+export default Home;
