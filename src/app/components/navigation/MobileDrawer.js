@@ -23,7 +23,7 @@ export const MobileDrawer = () => {
         }}
       />
       <Drawer placement="top" isOpen={isOpen} onClose={onClose}>
-        <DrawerContent bg="#FEFFED" h={"100vh"}>
+        <DrawerContent bg="#FEFFED" h={"100vh"} w="100vw">
           <DrawerHeader>
             <ToggleButton
               isOpen={isOpen}
