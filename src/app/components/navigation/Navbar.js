@@ -16,7 +16,7 @@ import {
   Input,
   useDisclosure,
 } from "@chakra-ui/react";
-import logo from "./logo.jpg";
+import {Logo} from "./Logo";
 import Link from "next/link";
 import { MobileDrawer } from "./MobileDrawer";
 
@@ -34,7 +34,7 @@ export const Navbar = () => {
             <HStack spacing="10">
               <HStack spacing="3">
                 <MobileDrawer />
-                <logo/>
+                <Logo/>
               </HStack>
             </HStack>
             <HStack
