@@ -112,14 +112,15 @@ export default function Alumni(){
                     <Heading fontWeight={700} fontSize={{sm:'15px', md:'24px', lg:'36px'}}>Thaanawiyyah</Heading>
                     <Box display='flex' flexDirection='column' gap={{base:'24px', lg:'32px'}}>
                         <Text fontSize={{base:"10px", lg:"24px"}}  >Class of 2021</Text>
-                        <SimpleGrid spacing={{base:'25px', lg:'50px'}} minChildWidth={{base:'150px', lg:'300px'}}>
+                        <SimpleGrid spacing={{base:'25px', lg:'50px'}} minChildWidth={{base:'130px', lg:'280px'}}>
                             {images.map(image=>
                                 <Card key={image.id} alignItems='center'>
                                     <CardBody borderRadius={10}>
                                         <Image 
                                         src={image.img}
                                         w={{base:'120px', lg:'270px'}} h={{base:'120px', lg:'270px'}}
-                                        borderRadius='full' />
+                                        borderRadius='full'
+                                        objectFit='cover' />
                                     </CardBody>
                                     <CardFooter p={{base:'0'}} fontSize={{base:"14px", lg:"32px"}}  fontWeight='500px' >{image.title}</CardFooter>
                                 </Card>

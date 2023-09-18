@@ -5,7 +5,7 @@ import { Donation } from "./components/home/Donation";
 import { ApplyNow } from "./components/home/ApplyNow";
 import Ourprograms from "./components/home/Ourprograms";
 import Community from "./components/home/Community";
-import Alumni from "./alumni/page";
+
 
 const Home = () => (
   <Box width="full">
