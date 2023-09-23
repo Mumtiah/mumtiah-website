@@ -46,7 +46,7 @@ export const MobileDrawer = () => {
       />
       <Drawer placement="top" isOpen={isOpen} onClose={onClose}>
         <DrawerContent bg="#FEFFED" h={"100vh"} w="100vw">
-          <DrawerHeader>
+          <DrawerHeader padding={"10px 0 15px"}>
             <HStack
               borderBottom={"1px solid #000"}
               justifyContent="space-between"
@@ -56,11 +56,11 @@ export const MobileDrawer = () => {
                 onClick={onToggle}
                 aria-label="Open menu"
               />
-              <CloseIcon />
+              <CloseIcon onClick={onToggle} />
             </HStack>
           </DrawerHeader>
 
-          <DrawerBody mt="72px" p="4">
+          <DrawerBody mt="52px" p="4">
             <Stack spacing="10px">
               {menuItems.map((item, index) => (
                 <MenuItem key={index} href={item.href} name={item.name} />
