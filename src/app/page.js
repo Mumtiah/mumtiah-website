@@ -6,6 +6,7 @@ import { ApplyNow } from "./components/home/ApplyNow";
 import Ourprograms from "./components/home/Ourprograms";
 import Community from "./components/home/Community";
 
+
 const Home = () => (
   <Box width="full">
     <HeroSection />
