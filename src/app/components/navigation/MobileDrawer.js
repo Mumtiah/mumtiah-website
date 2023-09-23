@@ -44,18 +44,19 @@ export const MobileDrawer = () => {
           lg: "none",
         }}
       />
-      <Drawer placement="top" isOpen={true} onClose={onClose}>
+      <Drawer placement="top" isOpen={isOpen} onClose={onClose}>
         <DrawerContent bg="#FEFFED" h={"100vh"} w="100vw">
           <DrawerHeader>
-            <HStack borderBottom={"1px solid #000"}>
-              {/* <ToggleButton
+            <HStack
+              borderBottom={"1px solid #000"}
+              justifyContent="space-between"
+            >
+              <ToggleButton
                 isOpen={isOpen}
                 onClick={onToggle}
                 aria-label="Open menu"
-              >
-                Menu
-              </ToggleButton>
-              <CloseIcon /> */}
+              />
+              <CloseIcon />
             </HStack>
           </DrawerHeader>
 
