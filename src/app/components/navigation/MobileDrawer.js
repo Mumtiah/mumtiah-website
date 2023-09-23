@@ -13,8 +13,26 @@ import { ToggleButton } from "./ToggleButton";
 import { CloseIcon } from "@chakra-ui/icons";
 import Link from "next/link";
 
+// Refactor repetitive menu items into a functional component
+const MenuItem = ({ href, name }) => (
+  <Link href={href}>
+    <Text fontSize="16px" padding="10px" height={"43px"} fontWeight="400">
+      {name}
+    </Text>
+  </Link>
+);
+
 export const MobileDrawer = () => {
   const { isOpen, onToggle, onClose } = useDisclosure();
+
+  const menuItems = [
+    { name: "Homepage", href: "/" },
+    { name: "Our Program", href: "/programs" },
+    { name: "Enroll", href: "/enrolment" },
+    { name: "Donate", href: "/donate" },
+    { name: "Alumni", href: "/alumni" },
+  ];
+
   return (
     <>
       <ToggleButton
@@ -26,48 +44,26 @@ export const MobileDrawer = () => {
           lg: "none",
         }}
       />
-      <Drawer placement="top" isOpen={isOpen} onClose={onClose}>
+      <Drawer placement="top" isOpen={true} onClose={onClose}>
         <DrawerContent bg="#FEFFED" h={"100vh"} w="100vw">
           <DrawerHeader>
-            <HStack>
-              <ToggleButton
+            <HStack borderBottom={"1px solid #000"}>
+              {/* <ToggleButton
                 isOpen={isOpen}
                 onClick={onToggle}
                 aria-label="Open menu"
               >
                 Menu
               </ToggleButton>
-              <CloseIcon />
+              <CloseIcon /> */}
             </HStack>
           </DrawerHeader>
 
           <DrawerBody mt="72px" p="4">
-            <Stack spacing="4">
-              <Link href="/">
-                <Text fontSize="14px" fontWeight="400">
-                  Homepage
-                </Text>
-              </Link>
-              <Link href="/programs">
-                <Text fontSize="14px" fontWeight="400">
-                  Our Program
-                </Text>
-              </Link>
-              <Link href="/enrolment">
-                <Text fontSize="14px" fontWeight="400">
-                  Enroll
-                </Text>
-              </Link>
-              <Link href="/donate">
-                <Text fontSize="14px" fontWeight="400">
-                  Donate
-                </Text>
-              </Link>
-              <Link href="/alumni">
-                <Text fontSize="14px" fontWeight="400">
-                  Alumni
-                </Text>
-              </Link>
+            <Stack spacing="10px">
+              {menuItems.map((item, index) => (
+                <MenuItem key={index} href={item.href} name={item.name} />
+              ))}
             </Stack>
           </DrawerBody>
         </DrawerContent>

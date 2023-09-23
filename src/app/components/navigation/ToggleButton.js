@@ -1,4 +1,4 @@
-import { Box, IconButton, chakra } from "@chakra-ui/react";
+import { Box, IconButton, chakra, Text, Flex } from "@chakra-ui/react";
 
 export const ToggleButton = (props) => {
   const { isOpen, ...iconButtonProps } = props;
@@ -27,20 +27,33 @@ const ToggleIcon = (props) => {
       aria-hidden
       pointerEvents="none"
     >
-      <Bar
-        top="0.4375rem"
-        _groupActive={{
-          top: "0.6875rem",
-          transform: "rotate(45deg)",
-        }}
-      />
-      <Bar
-        bottom="0.4375rem"
-        _groupActive={{
-          bottom: "0.6875rem",
-          transform: "rotate(-45deg)",
-        }}
-      />
+      <Flex>
+        <Box>
+          <Bar
+            top="0.2375rem"
+            _groupActive={{
+              top: "0.2875rem",
+              transform: "rotate(45deg)",
+            }}
+          />
+          <Bar
+            top="0.5875rem"
+            _groupActive={{
+              top: "0.5875rem",
+              transform: "rotate(-45deg)",
+            }}
+          />
+          <Bar
+            bottom="0.4375rem"
+            _groupActive={{
+              bottom: "0.6875rem",
+              transform: "rotate(-45deg)",
+            }}
+          />
+        </Box>
+
+        {isOpen && <Text fontSize="16px"> Menu</Text>}
+      </Flex>
     </Box>
   );
 };

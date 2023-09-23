@@ -4,7 +4,7 @@ import Link from "next/link";
 export const Logo = (props) => (
   <Box
     display={{
-      base: "none",
+      // base: "none",
       lg: "flex",
     }}
   >
