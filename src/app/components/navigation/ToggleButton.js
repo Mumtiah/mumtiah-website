@@ -26,7 +26,7 @@ const ToggleIcon = (props) => {
       aria-hidden
       pointerEvents="none"
     >
-      <Flex>
+      <Flex justifyContent={"space-between"} width="70px">
         <Box>
           <Bar top="0.2375rem" />
           <Bar top="0.5875rem" />
