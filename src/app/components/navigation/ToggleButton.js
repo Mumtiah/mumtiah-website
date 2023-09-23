@@ -33,13 +33,14 @@ const ToggleIcon = (props) => {
           <Bar top="0.5875rem" />
           <Bar bottom="0.4375rem" />
         </Box>
-
-        {active && (
-          <Text marginLeft={"10px"} fontSize="16px">
-            {" "}
-            Menu
-          </Text>
-        )}
+        <Box>
+          {active && (
+            <Text marginLeft={"10px"} fontSize="16px">
+              {" "}
+              Menu
+            </Text>
+          )}
+        </Box>
       </Flex>
     </Box>
   );
