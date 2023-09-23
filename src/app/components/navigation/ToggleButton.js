@@ -29,30 +29,17 @@ const ToggleIcon = (props) => {
     >
       <Flex>
         <Box>
-          <Bar
-            top="0.2375rem"
-            // _groupActive={{
-            //   top: "0.2875rem",
-            //   transform: "rotate(45deg)",
-            // }}
-          />
-          <Bar
-            top="0.5875rem"
-            // _groupActive={{
-            //   top: "0.5875rem",
-            //   transform: "rotate(-45deg)",
-            // }}
-          />
-          <Bar
-            bottom="0.4375rem"
-            // _groupActive={{
-            //   bottom: "0.6875rem",
-            //   transform: "rotate(-45deg)",
-            // }}
-          />
+          <Bar top="0.2375rem" />
+          <Bar top="0.5875rem" />
+          <Bar bottom="0.4375rem" />
         </Box>
 
-        {active && <Text fontSize="16px"> Menu</Text>}
+        {active && (
+          <Text marginLeft={"10px"} fontSize="16px">
+            {" "}
+            Menu
+          </Text>
+        )}
       </Flex>
     </Box>
   );
