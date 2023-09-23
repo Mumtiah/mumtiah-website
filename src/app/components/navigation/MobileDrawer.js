@@ -47,7 +47,7 @@ export const MobileDrawer = () => {
       <Drawer placement="top" isOpen={isOpen} onClose={onClose}>
         <DrawerContent bg="#FEFFED" h={"100vh"} w="100vw">
           <DrawerHeader
-            padding={"30px 16px 50px"}
+            padding={"30px 16px 40px"}
             borderBottom={"1px solid #000"}
           >
             <HStack justifyContent="space-between">
