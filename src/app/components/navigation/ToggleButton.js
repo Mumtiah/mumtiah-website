@@ -52,7 +52,7 @@ const ToggleIcon = (props) => {
           />
         </Box>
 
-        {isOpen && <Text fontSize="16px"> Menu</Text>}
+        {props.isOpen && <Text fontSize="16px"> Menu</Text>}
       </Flex>
     </Box>
   );
