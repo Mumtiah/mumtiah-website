@@ -115,13 +115,13 @@ export default function Alumni(){
                         <SimpleGrid spacing={{base:'25px', lg:'50px'}} minChildWidth={{base:'130px', lg:'280px'}}>
                             {images.map(image=>
                                 <Box key={image.id} >
-                                    <Box textAlign='center'
-                                        border='15px'
-                                        borderColor='#55E08C'>
+                                    <Box textAlign='center' >
                                         <Image 
                                         src={image.img}
                                         w={{base:'120px', lg:'270px'}} h={{base:'120px', lg:'270px'}}
                                         borderRadius='full'
+                                        border='4px'
+                                        borderColor='#55E08C'
                                          />
                                     </Box>
                                     <Text fontSize={{base:"14px", lg:"32px"}}  fontWeight='500px' >{image.title}</Text>
