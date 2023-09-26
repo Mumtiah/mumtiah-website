@@ -31,10 +31,10 @@ export const Navbar = () => {
       >
         <Container py="4" width={"full"} maxW="full">
           <HStack justify="space-between" spacing="8">
-            <HStack spacing="10">
-              <HStack spacing="3">
-                <MobileDrawer />
+            <HStack spacing="10" width={"100%"}>
+              <HStack spacing="3" justifyContent={"space-between"} width="100%">
                 <Logo />
+                <MobileDrawer />
               </HStack>
             </HStack>
             <HStack
