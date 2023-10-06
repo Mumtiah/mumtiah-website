@@ -6,7 +6,8 @@ import {
   Text,
   Image,
   Divider,
-  Box
+  Box,
+  SimpleGrid
 } from "@chakra-ui/react";
 import { FaTwitter, FaInstagram, FaFacebook } from "react-icons/fa";
 
@@ -29,18 +30,20 @@ export const Footer = () => (
       
     >
         <Image src="/mumtiahLogo.svg" w='40.69px' h='45px'></Image>
-        <Box w="210px">
-          <Text color='white' fontSize={{ base:"14px", md:"24px"}} fontWeight='400px' >Annex:</Text>
-          <Text color='white' fontSize={{ base:"14px", md:"24px"}} fontWeight='400px' noOfLines={{base:'2', md:'3'}} mb={4}>10 adesina street, ladi-lak, Bariga Lagos. </Text>
-        </Box>
-        <Box w="210px">
-          <Text color='white' fontSize={{ base:"14px", md:"24px"}} fontWeight='400px' >Annex:</Text>
-          <Text color='white' fontSize={{ base:"14px", md:"24px"}} fontWeight='400px' noOfLines={{base:'2', md:'3'}} mb={4}>Lasuth Central Mosque, Ikeja. </Text>
-        </Box>
-        <Box w="210px">
-          <Text color='white' fontSize={{ base:"14px", md:"24px"}} fontWeight='400px' >Annex:</Text>
-          <Text color='white' fontSize={{ base:"14px", md:"24px"}} fontWeight='400px' noOfLines={{base:'2', md:'3'}} mb={4}>Righeous Kiddies School, 16, Apesin street, Mushin</Text>
-        </Box>
+        <SimpleGrid columns={{ base:"1", md:"3"}} spacing={1}>
+          <Box w="300px">
+            <Text color='#FCFFD2' as="b" fontSize={{ base:"14px", md:"24px"}} fontWeight='400px' >Head Quarter:</Text>
+            <Text color='white' fontSize={{ base:"14px", md:"24px"}} fontWeight='400px' noOfLines={{base:'2', md:'3'}} mb={4}>10 adesina street, ladi-lak, Bariga Lagos. </Text>
+          </Box>
+          <Box w="300px">
+            <Text color='#FCFFD2' as="b" fontSize={{ base:"14px", md:"24px"}} fontWeight='400px' >LASUCOM Branch:</Text>
+            <Text color='white' fontSize={{ base:"14px", md:"24px"}} fontWeight='400px' noOfLines={{base:'2', md:'3'}} mb={4}>LASUCOM Central Mosque, Ikeja, Lagos </Text>
+          </Box>
+          <Box w="300px">
+            <Text color='#FCFFD2' as="b" fontSize={{ base:"14px", md:"24px"}} fontWeight='400px' >LUTH Branch:</Text>
+            <Text color='white' fontSize={{ base:"14px", md:"24px"}} fontWeight='400px' noOfLines={{base:'2', md:'3'}} mb={4}>Righteous Kiddies School 7, Apesin street, beside Luth Gate, Mushin.</Text>
+          </Box>
+        </SimpleGrid>
         
         <Divider orientation='horizontal'/>
         <Text color='white' fontSize='14px' fontWeight='400px' textAlign='center'>Copyright 2023, All Right Reserved</Text>
