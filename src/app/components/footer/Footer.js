@@ -28,7 +28,7 @@ export const Footer = () => (
       }}
       
     >
-        <Image src="/mumtiahLogo.svg" w='40.69px' h='45px'></Image>
+        <Image src="/images/mumtiah-logo.png" w='40.69px' h='45px'></Image>
         <Box w="210px">
           <Text color='white' fontSize={{ base:"14px", md:"24px"}} fontWeight='400px' >Annex:</Text>
           <Text color='white' fontSize={{ base:"14px", md:"24px"}} fontWeight='400px' noOfLines={{base:'2', md:'3'}} mb={4}>10 adesina street, ladi-lak, Bariga Lagos. </Text>

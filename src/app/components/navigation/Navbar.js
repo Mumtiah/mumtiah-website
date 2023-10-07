@@ -38,7 +38,7 @@ export const Navbar = () => {
               </HStack>
             </HStack>
             <HStack
-              w={{ lg: "484px" }}
+              w={{ lg: "784px" }}
               display={{
                 base: "none",
                 lg: "flex",

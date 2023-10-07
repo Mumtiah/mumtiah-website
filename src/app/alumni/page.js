@@ -114,17 +114,19 @@ export default function Alumni(){
                         <Text fontSize={{base:"10px", lg:"24px"}}  >Class of 2021</Text>
                         <SimpleGrid spacing={{base:'25px', lg:'50px'}} minChildWidth={{base:'130px', lg:'280px'}}>
                             {images.map(image=>
-                                <Box key={image.id} >
+                                <Box key={image.id}  mx={'auto'} w={'fit-content'}>
                                     <Box textAlign='center'
-                                        border='15px'
-                                        borderColor='#55E08C'>
+                                        border={'8px'}
+                                        borderRadius={'full'}
+                                        borderColor={'#55E08C'}>
                                         <Image 
                                         src={image.img}
                                         w={{base:'120px', lg:'270px'}} h={{base:'120px', lg:'270px'}}
                                         borderRadius='full'
+                                        objectFit={'cover'}
                                          />
                                     </Box>
-                                    <Text fontSize={{base:"14px", lg:"32px"}}  fontWeight='500px' >{image.title}</Text>
+                                    <Text fontSize={{base:"14px", lg:"32px"}}  fontWeight='500px' textAlign={'center'}>{image.title}</Text>
                                 </Box>
 
                             )}
