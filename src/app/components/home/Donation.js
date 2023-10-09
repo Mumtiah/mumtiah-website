@@ -14,7 +14,7 @@ export const Donation = () => (
       fontSize={{ base: "14px", lg: "32px" }} 
       fontWeight={"semibold"} width={{ lg: "700px" }} 
       mb={"24px"} color={"#FBFFC9"}>
-      We Need Donation
+      SUPPORT OUR BUILD MUMTIAH PROJECT
     </Text>
     <Image width="100%" height="100%" src="/images/mosque.png" alt="Image Alt" />
     <Text 
@@ -25,9 +25,13 @@ export const Donation = () => (
     </Text>
     <Text 
       fontSize={{ base: "14px", lg: "24px" }} 
-      fontWeight={"medium"} width={{ lg: "932px" }} 
+      fontWeight={"medium"}  
       my="32px">
-        Help us make a difference by contributing to the development of our Learning and Development Institute. Your generous donation will directly support the expansion of our programs, resources, and outreach efforts. Together, we can empower individuals to thrive and drive positive change. Donate now to be a part of our mission!
+       <Text as="i"> Who is it that would loan Allah a godly loan except that He will multiply it for him... Q57v11</Text><br/><br/>
+        As an institution whose aim and mission is to spread the knowledge of the Deen across the world, our numbers have grown and our impact is being felt to the extent that the location and capacity of our current madrasah can contain.<br/><br/>
+        The plan is to not relent nor back down in doing the work of Allah, hence, we have plans of buying land and erecting our own Madrasah and masjid on it. <br/><br/>
+        Plans are already underway but execution is not close as we are still below the budget of our project.<br/><br/>
+        The Build Mumtiah Mosque project is budgeted at #100,000,000 and thus far, we have been able to raise #5.5M and $630. Kindly support this meritorious project.
     </Text>
     <Buttons width={{ base: "full", md: "auto"}} text="Donate Now" colorScheme="#008B37" variant="solid" bg="#008B37" />
   </Box>
