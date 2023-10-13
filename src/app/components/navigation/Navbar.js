@@ -22,7 +22,7 @@ import { MobileDrawer } from "./MobileDrawer";
 
 export const Navbar = () => {
   return (
-    <Box as="section" h={{ base: "80px", lg: "150px" }} bg="#FEFFED">
+    <Box as="section" h={{ base: "80px", lg: "150px" }} bg="#FDFFE4">
       <Box
         position="relative"
         px={{ base: "16px", lg: "100px" }}
@@ -46,8 +46,13 @@ export const Navbar = () => {
               gap="32px"
               justifyContent="space-between"
             >
+              <Link href="/">
+                <Text fontSize="20px" fontWeight="600" whiteSpace={"nowrap"}>
+                  Home
+                </Text>
+              </Link>
               <Link href="/programs">
-                <Text fontSize="20px" fontWeight="600">
+                <Text fontSize="20px" fontWeight="600" whiteSpace={"nowrap"}>
                   Our Program
                 </Text>
               </Link>
