@@ -41,7 +41,7 @@ const programData = [
 
 export default function Programs() {
   return (
-    <Box bg={{ base: "#FEFFED", md: "#fff" }} width="full" height="full">
+    <Box bg={{ base: "#FDFFE4", md: "#fff" }} width="full" height="full">
       <Container maxW="1440px" justifyContent={"center"} px={{ base: "10px" }}>
         {programData.map((program, index) => (
           <ProgramCard

@@ -37,7 +37,7 @@ const Ourprograms = () => {
     ]
 
     return(
-        <Container backgroundColor='#002A11' maxW='container.max' px={{base:4, lg:"100px"}} py={{base:"40px", lg:"90px"}}>
+        <Container backgroundColor='#002A11' maxW='container.max' px={{base:"16px", lg:"50px", xl:"100px"}} py={{base:"40px", lg:"90px"}}>
             
             <Text color='#FCFFDB' as="b" fontSize='36px' fontWeight='500px'mb={4}>Our Program</Text>
             <Text color='#FCFFDB' fontSize={{ base:"14px", lg:"20px"}}  fontWeight='600px' mb="4">As you must have guessed, Mumtiah Madrasah is an institution that has the best interest of her students at heart, hence, we have a number of programs crafter to accommodate everyone both home and abroad.<br/><br/>
@@ -46,7 +46,7 @@ const Ourprograms = () => {
             <SimpleGrid columns={[1, null, 2]} spacing={{base:4, lg:10}} mb={6}>
                 {
                     programs.map((program, i) => (
-                        <Box key={program.id} bg='#80E7A9' p={{ base:"10px", lg:"32px"}} height={{base:"160px", lg:"350px"}} borderRadius={5}>
+                        <Box key={program.id} bg='#80E7A9' p={{ base:"10px", lg:"32px"}} height={{base:"160px", lg:"390px"}} borderRadius={5}>
                             <Text color='#002A11' fontSize={{ base:"14px", lg:"40px"}} mb="10px" fontWeight='700px'as='b' >{program.mainText}</Text>
                             <Text color='#002A11' fontSize={{ base:"14px", lg:"24px"}} fontWeight='400px'>{program.subText}</Text>
                         </Box>

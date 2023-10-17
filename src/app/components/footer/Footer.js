@@ -19,7 +19,7 @@ export const Footer = () => (
     bg='#002A11'
     maxW="container.max"
     py={{ base: "40px", lg: "120px" }}
-    px={{ base: "16px", lg: "100px" }} 
+    px={{ base: "16px", lg:"50px", xl: "100px" }} 
     
   >
     <Stack
@@ -29,8 +29,8 @@ export const Footer = () => (
       }}
       
     >
-        <Image src="/mumtiahLogo.svg" w='40.69px' h='45px'></Image>
-        <SimpleGrid columns={{ base:"1", md:"3"}} spacing={1}>
+        <Image src="/images/mumtiah-logo.png" w='40.69px' h='45px'></Image>
+        <SimpleGrid columns={{ base:"1", md:"2", lg:"3"}} spacing={1}>
           <Box w="300px">
             <Text color='#FCFFD2' as="b" fontSize={{ base:"14px", md:"24px"}} fontWeight='400px' >Main Branch:</Text>
             <Text color='white' fontSize={{ base:"14px", md:"24px"}} fontWeight='400px' noOfLines={{base:'2', md:'3'}} mb={4}>10 adesina street, ladi-lak, Bariga Lagos. </Text>

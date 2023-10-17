@@ -4,9 +4,9 @@ import Buttons from "../button/Buttons";
 
 export const Donation = () => (
   <Box 
-    color={"#FEFFED"} 
+    color={"#FDFFE4"} 
     m={0} width="full" 
-    px={{ base: "16px", lg: "100px" }} 
+    px={{ base: "16px", lg: "50px", xl:"100px" }} 
     bg={"#002A11"} 
     py={{ base: "40px", lg: "120px" }}
   >
