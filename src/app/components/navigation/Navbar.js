@@ -72,7 +72,7 @@ export const Navbar = () => {
                 </Text>
               </Link>
               <Link href="/datahub">
-                <Text fontSize="20px" fontWeight="600">
+                <Text fontSize="20px" fontWeight="600" whiteSpace={"nowrap"}>
                   Data Hub
                 </Text>
               </Link>
