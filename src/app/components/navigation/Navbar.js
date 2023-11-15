@@ -71,6 +71,11 @@ export const Navbar = () => {
                   Alumni
                 </Text>
               </Link>
+              <Link href="/datahub">
+                <Text fontSize="20px" fontWeight="600">
+                  Data Hub
+                </Text>
+              </Link>
             </HStack>
           </HStack>
         </Container>
