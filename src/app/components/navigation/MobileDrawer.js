@@ -31,6 +31,7 @@ export const MobileDrawer = () => {
     { name: "Enroll", href: "/enrolment" },
     { name: "Donate", href: "/donate" },
     { name: "Alumni", href: "/alumni" },
+    { name: "Data hub", href: "/datahub" }
   ];
 
   return (
@@ -63,7 +64,7 @@ export const MobileDrawer = () => {
           <DrawerBody mt="52px" p="4">
             <Stack spacing="10px">
               {menuItems.map((item, index) => (
-                <MenuItem key={index} href={item.href} name={item.name} />
+                <MenuItem key={index} href={item.href} onClose={onClose} name={item.name} />
               ))}
             </Stack>
           </DrawerBody>
