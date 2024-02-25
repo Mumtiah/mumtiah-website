@@ -1,5 +1,6 @@
 import { Container, Text, Box, SimpleGrid } from "@chakra-ui/react"
 import Buttons from "../button/Buttons"
+import Link from "next/link"
 
 const Ourprograms = () => {
 
@@ -53,7 +54,9 @@ const Ourprograms = () => {
                     ))
                 }
             </SimpleGrid>
-            <Buttons text="Our Program" colorScheme="#008B37" variant="solid" bg="#008B37"/>
+            <Link href="/programs">
+                <Buttons text="Our Program" colorScheme="#008B37" variant="solid" bg="#008B37"/>
+            </Link>
         </Container>
     )
 }

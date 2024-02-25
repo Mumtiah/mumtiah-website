@@ -1,6 +1,7 @@
 "use client";
 import { Box, Text, Image } from "@chakra-ui/react";
 import Buttons from "../button/Buttons";
+import Link from "next/link";
 
 export const Donation = () => (
   <Box 
@@ -33,7 +34,9 @@ export const Donation = () => (
         Plans are already underway but execution is not close as we are still below the budget of our project.<br/><br/>
         The Build Mumtiah Mosque project is budgeted at #100,000,000 and thus far, we have been able to raise #5.5M and $630. Kindly support this meritorious project.
     </Text>
-    <Buttons width={{ base: "full", md: "auto"}} text="Donate Now" colorScheme="#008B37" variant="solid" bg="#008B37" />
+    <Link href="/donate">
+      <Buttons width={{ base: "full", md: "auto"}} text="Donate Now" colorScheme="#008B37" variant="solid" bg="#008B37" />
+    </Link>
   </Box>
 );
 
