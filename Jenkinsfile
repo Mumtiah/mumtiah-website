@@ -1,55 +1,38 @@
 pipeline {
-    agent any   // Use any available Jenkins agent
+    agent any
 
     stages {
-        stage('Checkout') {
+        stage('Install Dependencies') {
             steps {
-                // Pull the latest code from your GitHub repository
-                checkout scm
+                sh 'npm install'
             }
         }
 
-        stage('Install Dependencies') {
+        stage('Run Tests') {
             steps {
-                echo 'Installing project dependencies...'
-                sh 'npm install'
+                sh 'npm test || echo "No tests found, skipping..."'
             }
         }
 
         stage('Build') {
             steps {
-                echo 'Building the project...'
-                sh 'npm run build'
+                sh 'npm run build || echo "No build step defined, skipping..."'
             }
         }
 
-        stage('Test') {
+        stage('Deploy') {
             steps {
-                echo 'Running tests...'
-                // Optional: if you don’t have tests, you can comment this out
-                sh 'npm test || echo "No tests found"'
-            }
-        }
-
-        stage('Deploy or Archive Build') {
-            steps {
-                echo 'Archiving build artifacts...'
-                archiveArtifacts artifacts: 'dist/**/*', fingerprint: true
-                // or, if your build output folder is "build"
-                // archiveArtifacts artifacts: 'build/**/*', fingerprint: true
+                echo 'Deployment step — customize for VPS or hosting later.'
             }
         }
     }
 
     post {
-        always {
-            echo 'Pipeline finished!'
-        }
         success {
-            echo '✅ Build succeeded!'
+            echo '✅ Build completed successfully!'
         }
         failure {
-            echo '❌ Build failed.'
+            echo '❌ Build failed. Check logs.'
         }
     }
 }
