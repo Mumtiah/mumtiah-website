@@ -41,10 +41,10 @@ export const Donation = () => (
       my={{base:"8px", lg:"16px"}} color={"#FBFFC9"}>
       The Pivotal Steps
     </Text>
-    <Text fontSize={24}><strong>Structural Erection</strong> Reinforcing walls, roofing, and security.</Text><br/>
-    <Text fontSize={24}><strong>Essential Utilities</strong> Wiring and Plumbing.</Text><br/>
-    <Text fontSize={24}><strong>Transformation</strong>Turning a shell into a sanctuary for the Ummah.</Text><br/>
-        <Text fontSize={24}>By contributing to this project, you are literally laying the foundation for a laudable legacy, stability, protection, and eternal sadaqatun jaariyah bi awnillah because at this stage, every contribution is not just money.
+    <Text fontSize={{ base: "14px", lg: "24px" }}><strong>Structural Erection</strong> Reinforcing walls, roofing, and security.</Text><br/>
+    <Text fontSize={{ base: "14px", lg: "24px" }}><strong>Essential Utilities</strong> Wiring and Plumbing.</Text><br/>
+    <Text fontSize={{ base: "14px", lg: "24px" }}><strong>Transformation</strong>Turning a shell into a sanctuary for the Ummah.</Text><br/>
+        <Text fontSize={{ base: "14px", lg: "24px" }}>By contributing to this project, you are literally laying the foundation for a laudable legacy, stability, protection, and eternal sadaqatun jaariyah bi awnillah because at this stage, every contribution is not just money.
         It is protection.
         It is stability.
         It is the final step toward turning years of effort into a lasting legacy.</Text><br/><br/>
