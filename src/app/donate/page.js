@@ -8,7 +8,6 @@ export default function Datahub() {
             <Container bg="#FDFFE4" maxW='container.max' textAlign='' px={{ base: "16px", lg: "100px" }} py={{ base: "40px", lg: "50px" }}>
                 <Box display={'flex'} justifyContent={'space-between'}>
                     <Text color='#002A11' width={'500px'} fontSize={{ base:"28px", lg:"40px"}} fontWeight='500'as='b'>Support Build Mumtiah Project</Text>
-                    <Link href="https://dynaraise.com/build-mumtiah" isExternal colorScheme="#002A11" variant="solid" bg="#002A11" height={'fit-content'} width="170px" color={"#FEFFF4"} py="12px" px="16px" textAlign={"center"} rounded={"12px"}>Donate</Link>
                 </Box>
                 <Text fontWeight="400px" fontStyle={'italic'} fontSize={{base:"14px", lg:"24px"}} mt={'32px'} width={{base:'full', lg:'full'}}>Who is it that would loan Allah a godly loan except that He will multiply it for him... Q57v11
                 <br/><br/>The Build Mumtiah Mosque project is budgeted at #250,000,000 and thus far, we have been able to acquire a property in Bariga, Lagos.</Text>
@@ -34,8 +33,8 @@ export default function Datahub() {
                 </Box> */}
 
                 <Text fontSize={"32px"}  mt="50px" fontWeight={"500"}>Donate now</Text>
-                <Box width={"full"}  mt="25px" bg="#CCF6DD" borderTop={"1px"} borderColor={"#002A11"} rounded={"8px"} py={"40px"} px={"6px"} color={"#002A11"}>
-                    <Box width={"full"} display={{lg: "flex"}} justifyContent={"center"} gap={"127px"}>
+                <Box width={"full"} bg="#CCF6DD" borderTop={"1px"} borderColor={"#002A11"} rounded={"8px"} py={"40px"} px={"6px"} color={"#002A11"}>
+                    <Box width={"full"} display={{lg: "flex"}} px={{base: "8px", md: "32px"}} justifyContent={"center"} gap={"127px"}>
                         <Box fontSize={{base: "24px", lg: "32px"}}>
                             <Text fontStyle={"italic"} fontWeight={"300"}>Naira Account</Text>
                             <Text fontWeight={"700"}>0654641304/gtbank</Text>
@@ -50,6 +49,10 @@ export default function Datahub() {
                     <Text mt={{base: "40px", lg: "80px"}} fontSize={{base: "24px", lg: "32px"}} width={"full"} textAlign={"center"} fontStyle={"italic"} fontWeight={"300"}>Or donate via 
                     <Link href="https://gofund.me/5333936f" isExternal colorScheme="#002A11" variant="solid" bg="#002A11" display={'inline'} height={'fit-content'} width="270px" mx="12px" mt="12px" color={"#FEFFF4"} py="12px" px="16px" textAlign={"center"} rounded={"12px"}>GoFundMe</Link>
                     </Text>
+                    <Box width={"full"} display={"flex"} mt="45px" flexDirection={{base: "column", md: "row"}} justifyContent={"center"} px={{base: "8px", md: "32px"}} gap={{base: "16px", md: "127px"}} mb={"40px"}>
+                        <Text fontSize={{base: "24px", lg: "32px"}}>Subscribe to weekly or monthly donations via dynaraise.</Text>
+                        <Link href="https://dynaraise.com/build-mumtiah" isExternal colorScheme="#002A11" variant="solid" bg="#002A11" height={'fit-content'} width="170px" color={"#FEFFF4"} py="12px" px="16px" textAlign={"center"} rounded={"12px"}>Subscribe</Link>
+                    </Box>
                 </Box>
             </Container>
         </>
